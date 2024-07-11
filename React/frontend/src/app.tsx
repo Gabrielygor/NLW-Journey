@@ -1,4 +1,5 @@
-import { CreateTripPage } from './pages/creatTrip/index'
+import { CreateTripPage } from './pages/creat-trip/index'
+import { TripDetailsPage } from './pages/trip-details//index'
 
 
 import {
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <CreateTripPage />,
+  },
+  {
+    path: "/trips/:tripId",
+    element: <TripDetailsPage />,
   },
 ]);
 
